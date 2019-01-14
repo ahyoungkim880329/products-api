@@ -69,3 +69,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # 画像アップロードのため追加
 gem 'carrierwave-base64'
+
+# Http通信のため追加
+gem 'httparty'

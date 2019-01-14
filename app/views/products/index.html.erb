@@ -1,0 +1,23 @@
+<h1>商品情報一覧</h1>
+
+<p><%= link_to '登録', new_product_path %></p>
+
+<table>
+  <tr>
+    <th>商品タイトル</th>
+    <th>価格</th>
+  </tr>
+  <tr>
+    <% @products.each do |product| %>
+      <tr>
+        <td><%= product["title"] %></td>
+        <td><%= product["price"] %></td>
+        <td><%= link_to '詳細', product_path(product["id"]) %></td>
+        <td><%= link_to '編集', edit_product_path(product["id"]) %></td>
+        <td><%= link_to '削除', product_path(product["id"]),
+                method: :delete,
+                data: { confirm: '削除しますか?' } %></td>
+      </tr>
+    <% end %>
+  </tr>
+</table>

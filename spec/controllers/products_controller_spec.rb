@@ -31,14 +31,14 @@ RSpec.describe ProductsController, type: :controller do
     end
   end
 
-  # 変更画面
+  # 編集画面
   describe "GET edit" do
     before {
       @product = create(:product)
       get 'edit', params: { id: @product.id }
     }
 
-    it '変更画面を表示する' do
+    it '編集画面を表示する' do
       expect(response).to have_http_status(200)
     end
   end
