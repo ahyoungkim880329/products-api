@@ -1,21 +1,21 @@
 <p>
-  <strong>商品タイトル:</strong>
+  <strong><%= t(:product_title) %>:</strong>
   <%= @product["title"] %>
 </p>
 
 <p>
-  <strong>商品画像:</strong>
+  <strong><%= t(:product_image) %>:</strong>
   <img src="<%= @product["image"]["url"] %>">
 </p>
 
 <p>
-  <strong>説明文:</strong>
+  <strong><%= t(:description) %>:</strong>
   <%= @product["description"] %>
 </p>
 
 <p>
-  <strong>価格:</strong>
+  <strong><%= t(:price) %>:</strong>
   <%= @product["price"] %>
 </p>
 
-<%= link_to 'Back', products_path %>
+<%= link_to t(:back), products_path %>

@@ -1,21 +1,21 @@
 <%= form_for @product do |f| %>
   <p>
-    <%= f.label :title, "商品タイトル" %><br>
+    <%= f.label :title, t(:product_title) %><br>
     <%= f.text_field :title %>
   </p>
 
   <p>
-    <%= f.label :image, "商品画像" %><br>
+    <%= f.label :image, t(:product_image) %><br>
     <%= f.file_field :image %>
   </p>
 
   <p>
-    <%= f.label :description, "説明文" %><br>
+    <%= f.label :description, t(:description) %><br>
     <%= f.text_area :description %>
   </p>
 
   <p>
-    <%= f.label :price, "価格" %><br>
+    <%= f.label :price, t(:price) %><br>
     <%= f.text_field :price %>
   </p>
 

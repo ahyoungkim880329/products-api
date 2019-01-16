@@ -1,0 +1,20 @@
+ja:
+  page_title_index: "商品情報一覧"
+  page_title_create: "商品情報登録"
+  page_title_edit: "商品情報変更"
+  product_title: "商品タイトル"
+  product_image: "商品画像"
+  before_product_image: "既存商品画像"
+  description: "説明文"
+  price: "価格"
+  create: "登録"
+  show: "詳細"
+  edit: "編集"
+  delete: "削除"
+  back: "戻る"
+  confirm_msg: "実行しますか？"
+
+  helpers:
+    submit:
+      create: "登録"
+      update: "編集"

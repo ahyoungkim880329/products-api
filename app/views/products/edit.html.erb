@@ -1,6 +1,6 @@
-<h1>商品情報変更</h1>
+<h1><%= t(:page_title_edit) %></h1>
 
-既存イメージ：<%= @product.image %><br>
+<%= t(:before_product_image) %>：<%= @product.image %><br>
 <%= render 'form' %>
 
-<%= link_to 'Back', products_path %>
+<%= link_to t(:back), products_path %>
