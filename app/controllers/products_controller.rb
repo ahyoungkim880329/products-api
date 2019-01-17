@@ -59,21 +59,4 @@ class ProductsController < ApplicationController
                         :headers => { 'Content-Type' => 'application/json' }
                       }
     end
-
-    def conversion
-      flash[:page_title_index] = t(:page_title_index)
-      flash[:page_title_create] = t(:page_title_create)
-      flash[:page_title_edit] = t(:page_title_edit)
-      flash[:product_title] = t(:product_title)
-      flash[:product_image] = t(:product_image)
-      flash[:before_product_image] = t(:before_product_image)
-      flash[:description] = t(:description)
-      flash[:price] = t(:price)
-      flash[:create] = t(:create)
-      flash[:show] = t(:show)
-      flash[:edit] = t(:edit)
-      flash[:delete] = t(:delete)
-      flash[:back] = t(:back)
-      flash[:confirm_msg] = t(:confirm_msg)
-    end
 end

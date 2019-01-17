@@ -1,0 +1,27 @@
+ja:
+  # 共通
+  list: "一覧"
+  create: "登録"
+  show: "詳細"
+  edit: "編集"
+  delete: "削除"
+  # 商品
+  product_info: "商品情報"
+  product_title: "商品タイトル"
+  product_image: "商品画像"
+  before_product_image: "既存商品画像"
+  description: "説明文"
+  price: "価格"
+  # 日次集計
+  aggregation_result: "集計結果"
+  date: "日付"
+  sort: "区分"
+  product_count: "商品数"
+  # メッセージ
+  confirm_msg: "実行しますか？"
+  # ボタン
+  back: "戻る"
+  helpers:
+    submit:
+      create: "登録"
+      update: "編集"
