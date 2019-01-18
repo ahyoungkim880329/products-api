@@ -54,11 +54,11 @@ group :development do
 end
 
 group :test do
-  # テストのための依存関係追加
   gem 'factory_bot_rails', '~> 4.0'
   gem 'shoulda-matchers', '~> 3.1'
   gem 'faker'
   gem 'database_cleaner'
+  gem 'rails-controller-testing'
 
   # APIドキュメント作成のため追加
   gem 'autodoc'
@@ -72,3 +72,18 @@ gem 'carrierwave-base64'
 
 # Http通信のため追加
 gem 'httparty'
+
+# ActiveRecordの論理削除のため追加
+gem 'paranoia'
+
+# 定期ジョブ処理のため追加
+gem 'sidekiq'
+gem 'sidekiq-scheduler'
+gem 'sinatra', require: false
+
+# エラー通知のため追加
+gem 'exception_notification'
+gem 'slack-notifier'
+
+# 検索機能のための追加
+gem 'ransack'

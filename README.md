@@ -2,26 +2,12 @@
 
 ## [課題] Ruby on Railsを使ったAPI作成
 
-- 期限：今週中(2019/01/08~11)
+- 期間：2019/01/08~11
 
 ### 課題内容
 
 - 課題：[RESTfulなAPIアプリケーション](https://docs.google.com/document/d/1-IcZxm6wz0-5nzzYT-xyHVttKKbWtobwHe3hwelrJUg/edit?usp=sharing)
-- 内容：下記情報を持つ商品データの登録・検索・変更・削除を行う、RESTfulなAPIの設計・実装
-  - 商品データ情報
-    - 商品画像
-    - 商品タイトル(最大100文字)
-    - 説明文(最大500文字)
-    - 価格
-  - レスポンス形式：JSON、内容はお任せ
-- 技術：Ruby, Ruby on Rails(フレームワーク)
-- 求めるアウトプット
-  - 必須：Github上に公開したソースコード、APIの設計資料
-    - Team-labのgitアカウントを作成し、個人リポジトリに公開
-  - 任意：説明資料、動作確認できるサーバ
-- 見るポイント
-  - 適切なAPI設計ができるか
-  - フレームワークを利用した簡潔なコードが書けるか
+
 
 ### 進捗
 
@@ -61,3 +47,44 @@
 - 詰まったところ
   - テストコードの作成
   - APIの呼び出し
+
+---
+
+## [課題] 定期ジョブ機能
+
+- 期間：2019/01/15~18
+
+### 課題内容
+
+- 課題：[定期ジョブ機能](https://docs.google.com/document/d/1kCXnPVg0ChcT2MaG4mMjeEyR-8og3kzCCIRAoZQPjHc/edit?usp=sharing)
+
+### 進捗
+
+#### 2019.01.15(火)
+
+- 課題内容の理解
+- 調査
+
+#### 2019.01.16(水)
+
+- 調査
+- プロトタイプ実装
+- 設計
+
+#### 2019.01.17(木)
+
+- 実装
+  - モデル
+    - 論理削除機能の追加
+    - 集計テーブルの作成
+  - ジョブ作成
+  - 画面
+
+#### 2019.01.18(金)
+
+- 実装
+  - ジョブのスケジューリング
+  - エラーのSlack通知機能
+  - 検索機能
+- 説明資料作成
+  - [20190118_[課題]定期ジョブ機能説明資料](https://docs.google.com/presentation/d/1eZq01w569Fuz3eNvotJQEnIskRUgNppRvD1OM3LIoes/edit?usp=sharing)

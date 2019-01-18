@@ -1,0 +1,40 @@
+<h1><%= t(:aggregation_result) + t(:list) %></h1>
+
+<p>
+  <%= search_form_for @q do |f| %>
+    <%= f.label 'From:' %>
+    <%= f.date_field :date_gteq %>
+
+    <%= f.label 'To:' %>
+    <%= f.date_field :date_lteq %>
+
+    <%= f.submit %>
+  <% end %>
+</p>
+
+<table>
+  <tr>
+    <th>No.</th>
+    <th><%= t(:date) %></th>
+    <th><%= t(:sort) %></th>
+    <th><%= t(:product_count) %></th>
+  </tr>
+  <%
+    row_num = 1
+    @daily_aggregations.each do |daily_aggregation|
+  %>
+    <tr>
+      <td><%= row_num %></td>
+      <td><%= daily_aggregation["date"] %></td>
+      <td><%= daily_aggregation["sort"] %></td>
+      <td><%= daily_aggregation["products_count"] %></td>
+      <td>
+        <%= link_to_if(daily_aggregation["products_count"] != 0,
+            t(:show), daily_aggregation_path(daily_aggregation["id"])) {} %>
+      </td>
+    </tr>
+  <%
+      row_num += 1
+    end
+  %>
+</table>
