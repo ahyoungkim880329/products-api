@@ -5,8 +5,8 @@ class DailyAggregationJob
 
   def perform(*args)
     # 集計対象の条件(前日分)
-    target_condition = (Time.now.midnight - 1.day)..Time.now.midnight
-    target_date = Date.today - 1
+    target_condition = Date.yesterday.all_day
+    target_date = Date.yesterday
 
     # 作成商品情報の集計・保存(削除された件数は除外)
     created_products = Product.where(created_at: target_condition)
