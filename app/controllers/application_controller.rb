@@ -1,4 +1,7 @@
 class ApplicationController < ActionController::Base
+  include Response
+  include ExceptionHandler
+
   # 多言語対応のため追加
   before_action :set_locale
 
@@ -9,7 +12,4 @@ class ApplicationController < ActionController::Base
   def locale
     @locale ||= params[:locale] || I18n.default_locale
   end
-
-  include Response
-  include ExceptionHandler
 end
